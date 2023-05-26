@@ -45,16 +45,6 @@ function Installation_dependency() {
 function check_root() {
   [[ $EUID != 0 ]] && echo -e "${Error} 当前非ROOT账号(或没有ROOT权限)，无法继续操作，请更换ROOT账号或使用 ${Green_background_prefix}sudo su${Font_color_suffix} 命令获取临时ROOT权限（执行后可能会提示输入当前账号的密码）。" && exit 1
 }
-function check_new_ver() {
-  # deprecated
-  ct_new_ver=$(wget --no-check-certificate -qO- -t2 -T3 https://api.github.com/repos/ginuerzh/gost/releases/latest | grep "tag_name" | head -n 1 | awk -F ":" '{print $2}' | sed 's/\"//g;s/,//g;s/ //g;s/v//g')
-  if [[ -z ${ct_new_ver} ]]; then
-    ct_new_ver="2.11.2"
-    echo -e "${Error} gost 最新版本获取失败，正在下载v${ct_new_ver}版"
-  else
-    echo -e "${Info} gost 目前最新版本为 ${ct_new_ver}"
-  fi
-}
 function check_file() {
   if test ! -d "/usr/lib/systemd/system/"; then
     mkdir /usr/lib/systemd/system
