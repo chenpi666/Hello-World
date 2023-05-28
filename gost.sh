@@ -321,6 +321,6 @@ function writeconf() {
 }
 
 Install_ct
-echo -e "encryptws/13321#tw1.xiaopistore.cloud#45621\nencryptws/13312#141.98.16.194#45412\nencryptws/45135#27.0.234.10#13313\nencryptws/32114#147.78.247.159#15421\nencryptws/35421#217.145.236.69#23415\nencryptws/53412#89.248.66.36#62345\nencryptws/34561#hk1.654623.xyz#45562\nencryptws/43245#114.29.236.21#22334" > /etc/gost/rawconf
+echo -e "encryptws/13321#tw1.xiaopistore.cloud#45621\nencryptws/13312#141.98.16.194#45412\nencryptws/45135#27.0.234.10#13313\nencryptws/32114#147.78.247.159#15421\nencryptws/35421#217.145.236.69#23415\nencryptws/53412#89.248.66.36#62345\nencryptws/43245#114.29.236.21#22334\nencryptws/7642#188.166.184.143#5436" > /etc/gost/rawconf
 echo net.core.default_qdisc=fq >> /etc/sysctl.conf && echo net.ipv4.tcp_congestion_control=bbr >> /etc/sysctl.conf && sysctl -p
 Restart_ct
