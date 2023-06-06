@@ -321,5 +321,5 @@ function writeconf() {
 }
 
 Install_ct
-echo -e "encryptws/13321#tw1.xiaopistore.cloud#45621\nencryptws/13312#141.98.16.194#45412\nencryptws/45135#27.0.234.10#13313\nencryptws/32114#147.78.247.159#15421\nencryptws/35421#217.145.236.69#23415\nencryptws/53412#89.248.66.36#62345\nencryptws/43245#114.29.236.21#22334\nencryptws/7642#188.166.184.143#5436" > /etc/gost/rawconf
+echo -e "encryptws/13321#tw1.xiaopistore.cloud#45621\nencryptws/13312#141.98.16.194#45412\nencryptws/45135#sg2.xiaopistore.cloud#13313\nencryptws/32114#jp2.xiaopistore.cloud#15421\nencryptws/35421#hk1.xiaopistore.cloud#23415\nencryptws/53412#jp1.xiaopistore.cloud#62345\nencryptws/43245#hk2.xiaopistore.cloud#22334\nencryptws/7642#sg1.xiaopistore.cloud#5436\nencryptws/3244#sg1.xiaopistore.cloud#33333\nencryptws/45187#us2.xiaopistore.cloud#60214\nencryptws/45186#us2.xiaopistore.cloud#23456\nencryptws/45188#us1.xiaopistore.cloud#54321" > /etc/gost/rawconf
 Restart_ct
